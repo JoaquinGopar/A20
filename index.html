@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body class="cuerpo">
+
+    <!-- ------------------------------------------------------------------- -->
+
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="busqueda">
+                        <div class="input-busqueda">
+                            <input type="text" placeholder="¿Qué estás buscando?" list="datalistOptions" id="exampleDataList" aria-describedby="button-search">
+                            <datalist id="datalistOptions">
+                                <option value="GTA 5">
+                                <option value="Fifa 21">
+                                <option value="Apex Legends">
+                                <option value="PAYDAY">
+                                <option value="Call of Duty">
+                            </datalist>
+                        </div>
+
+                        <div class="lupa">
+                            <button class="btn" type="button" id="button-search"><i class="bi bi-search"></i></button>
+                        </div>
+
+                    </div>
+                </ul>
+                <form class="d-flex formulario">
+                    <div class="cuenta">
+                    <i class="bi bi-person"></i>
+                    <a href="html/login.html">Iniciar Sesion /</a>
+                    <a href="html/registrarse.html">Registrarse</a>
+                    </div>
+
+                    <div class="carro">
+                        <a href="">
+                            <i class="bi bi-cart icono"></i>
+                        </a>
+                    </div>
+
+                </form>
+                
+                <div class="contacto">
+                    <h4>Contactos: </h4>
+                    <img src="assets/footer/contacto/wpp.png" alt="">
+                    <img src="assets/footer/contacto/facebook.png" alt="">
+                    <img src="assets/footer/contacto/twitter.png" alt="">
+                    <img src="assets/footer/contacto/instagram.png" alt="">
+                    <img src="assets/footer/contacto/reddit.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <nav class="sec-nav">
+        <div class="parte2">
+                <div class="input-group mb-3 categorias">
+                    <button class="btn btn-secondary dropdown-toggle dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">CATEGORÍAS</button>
+                    <ul class="dropdown-menu menu-categ" id="target-list">
+                        <li><a class="dropdown-item li-1" href="#">Videojuegos</a></li>
+                        <li><a class="dropdown-item" href="#">Tarjetas de Regalo Gaming</a></li>
+                        <li><a class="dropdown-item" href="#">Suscripciones</a></li>   
+                        <li><a class="dropdown-item" href="#">Software</a></li>
+                        <li><a class="dropdown-item" href="#">Tarjetas de regalo</a></li>
+                    </ul>
+
+                    <a href=""><button class="btn btn-secondary">PC</button></a>
+
+                    <a href=""><button class="btn btn-secondary">Xbox</button></a>
+
+                    <a href=""><button class="btn btn-secondary">PlayStation</button></a>
+
+                    <a href=""><button class="btn btn-secondary">Software</button></a>
+                </div>
+        </div>
+    </nav>
+
+    <!-- ------------------------------------------------------------------- -->
+
+    <section class="sec-destacados">
+        <div class="container">
+            <div class="titulo">
+                <h5>DESTACADOS Y RECOMENDADOS</h5>
+            </div>
+            
+            <div id="carouselDestacados" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators indicador">
+                    <button type="button" data-bs-target="#carouselDestacadosIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselDestacadosIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselDestacadosIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselDestacadosIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselDestacadosIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+
+                <div class="carousel-inner carousel">
+                    <div class="carousel-item active carrusel-1">
+                        <div class="contenido">
+                            <div class="imagen">
+                                <a href=""><img src="assets/Gta/gta.jpg" class="d-block" alt="gta"></a>
+                            </div>
+
+                            <div class="descripcion">
+                                <h4>GTA</h4>
+                                <p>Grand Theft Auto V para PC ofrece a los jugadores la opción de explorar el galardonado mundo de Los Santos y el condado de Blaine con una resolución de 4K y disfrutar del juego a 60 fotogramas por segundo.</p>
+                                <div class="img-prev">
+                                    <img src="assets/Gta/gta-prev-1.jpg" alt="prev1">
+                                    <img src="assets/Gta/gta-prev-2.jpg" alt="prev2">
+                                    <img src="assets/Gta/gta-prev-3.jpg" alt="prev3">
+                                    <img src="assets/Gta/gta-prev-4.jpg" alt="prev4">
+                                </div>
+                                <div class="precio">
+                                    <p>ARS$4.500,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item carrusel-2">
+                        <div class="contenido">
+                            <div class="imagen">
+                                <a href=""><img src="assets/Apex/apex.jpg" class="d-block" alt="apex"></a>
+                            </div>
+
+                            <div class="descripcion">
+                                <h4>Apex Legends</h4>
+                                <p>Apex Legends es el galardonado juego de disparos de héroes gratuito de Respawn Entertainment. Controla un elenco en aumento de personajes con habilidades poderosas y disfruta del juego estratégico por escuadrones.</p>
+                                <div class="img-prev">
+                                    <img src="assets/Apex/apex-prev-1.jpg" alt="prev1">
+                                    <img src="assets/Apex/apex-prev-2.jpg" alt="prev2">
+                                    <img src="assets/Apex/apex-prev-3.jpg" alt="prev3">
+                                    <img src="assets/Apex/apex-prev-4.jpg" alt="prev4">
+                                </div>
+                                <div class="precio">
+                                    <p>Free To Play</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item carrusel-3">
+                        <div class="contenido">
+                            <div class="imagen">
+                                <a href=""><img src="assets/RedDead/rdr.jpg" class="d-block" alt="rdr"></a>
+                            </div>
+
+                            <div class="descripcion">
+                                <h4>Red Dead Redemption II</h4>
+                                <p>Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es la épica historia de Arthur Morgan y la banda de Van der Linde, que huyen por Estados Unidos en los albores del siglo XX.</p>
+                                <div class="img-prev">
+                                    <img src="assets/RedDead/rdr-prev-1.jpg" alt="prev1">
+                                    <img src="assets/RedDead/rdr-prev-2.jpg" alt="prev2">
+                                    <img src="assets/RedDead/rdr-prev-3.jpg" alt="prev3">
+                                    <img src="assets/RedDead/rdr-prev-4.jpg" alt="prev4">
+                                </div>
+                                <div class="precio-con-descuento">
+                                    <p class="descuento">-67%</p>
+                                    <p class="p-incial">ARS$11.299,00</p>
+                                    <p class="p-final">ARS$3.728,67</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item carrusel-4">
+                        <div class="contenido">
+                            <div class="imagen">
+                                <a href=""><img src="assets/Cyberpunk/cyberpunk.jpg" class="d-block" alt="cyber"></a>
+                            </div>
+
+                            <div class="descripcion">
+                                <h4>Cyberpunk 2077</h4>
+                                <p>Cyberpunk 2077 es un RPG de aventura y acción de mundo abierto ambientado en el futuro sombrío de Night City, una peligrosa megalópolis obsesionada con el poder, el glamur y las incesantes modificaciones corporales.</p>
+                                <div class="img-prev">
+                                    <img src="assets/Cyberpunk/cyber-prev-1.jpg" alt="prev1">
+                                    <img src="assets/Cyberpunk/cyber-prev-2.jpg" alt="prev2">
+                                    <img src="assets/Cyberpunk/cyber-prev-3.jpg" alt="prev3">
+                                    <img src="assets/Cyberpunk/cyber-prev-4.jpg" alt="prev4">
+                                </div>
+                                <div class="precio">
+                                    <p>ARS$9.999,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item carrusel-5">
+                        <div class="contenido">
+                            <div class="imagen">
+                                <a href=""><img src="assets/Resident/Resident.jpg" class="d-block" alt="resident"></a>
+                            </div>
+
+                            <div class="descripcion">
+                                <h4>Resident Evil 4</h4>
+                                <p>La supervivencia es solo el comienzo. A seis años del desastre biológico en Raccoon City, Leon S. Kennedy, uno de los sobrevivientes, rastreó a la hija secuestrada del presidente hasta una aldea europea aislada.</p>
+                                <div class="img-prev">
+                                    <img src="assets/Resident/re-prev-1.jpg" alt="prev1">
+                                    <img src="assets/Resident/re-prev-2.jpg" alt="prev2">
+                                    <img src="assets/Resident/re-prev-3.jpg" alt="prev3">
+                                    <img src="assets/Resident/re-prev-4.jpg" alt="prev4">
+                                </div>
+                                <div class="precio-con-descuento">
+                                    <p class="descuento">-34%</p>
+                                    <p class="p-incial">ARS$12.958,00</p>
+                                    <p class="p-final">ARS$8.552,28</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev anterior" type="button" data-bs-target="#carouselDestacados" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next siguiente" type="button" data-bs-target="#carouselDestacados" data-bs-slide="next" data-bs-target="#carouselDestacadosAutoplaying">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+            <div class="destacados-responsive">
+                <div class="contenido-1">
+                    <div class="imagen">
+                        <a href=""><img src="assets/Gta/gta.jpg" class="d-block m-0" alt="gta"></a>
+                    </div>
+
+                    <div class="descripcion">
+                        <h4>GTA</h4>
+                        <p>Grand Theft Auto V para PC ofrece a los jugadores la opción de explorar el galardonado mundo de Los Santos y el condado de Blaine con una resolución de 4K y disfrutar del juego a 60 fotogramas por segundo.</p>
+                        <div class="img-prev">
+                            <img src="assets/Gta/gta-prev-1.jpg" alt="prev1">
+                            <img src="assets/Gta/gta-prev-2.jpg" alt="prev2">
+                            <img src="assets/Gta/gta-prev-3.jpg" alt="prev3">
+                            <img src="assets/Gta/gta-prev-4.jpg" alt="prev4">
+                        </div>
+                        <div class="precio">
+                            <p>ARS$4.500,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenido-2">
+                    <div class="imagen">
+                        <a href=""><img src="assets/Apex/apex.jpg" class="d-block" alt="apex"></a>
+                    </div>
+
+                    <div class="descripcion">
+                        <h4>Apex Legends</h4>
+                        <p>Apex Legends es el galardonado juego de disparos de héroes gratuito de Respawn Entertainment. Controla un elenco en aumento de personajes con habilidades poderosas y disfruta del juego estratégico por escuadrones.</p>
+                        <div class="img-prev">
+                            <img src="assets/Apex/apex-prev-1.jpg" alt="prev1">
+                            <img src="assets/Apex/apex-prev-2.jpg" alt="prev2">
+                            <img src="assets/Apex/apex-prev-3.jpg" alt="prev3">
+                            <img src="assets/Apex/apex-prev-4.jpg" alt="prev4">
+                        </div>
+                        <div class="precio">
+                            <p>Free To Play</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenido-3">
+                    <div class="imagen">
+                        <a href=""><img src="assets/RedDead/rdr.jpg" class="d-block" alt="rdr"></a>
+                    </div>
+
+                    <div class="descripcion">
+                        <h4>Red Dead Redemption II</h4>
+                        <p>Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es la épica historia de Arthur Morgan y la banda de Van der Linde, que huyen por Estados Unidos en los albores del siglo XX.</p>
+                        <div class="img-prev">
+                            <img src="assets/RedDead/rdr-prev-1.jpg" alt="prev1">
+                            <img src="assets/RedDead/rdr-prev-2.jpg" alt="prev2">
+                            <img src="assets/RedDead/rdr-prev-3.jpg" alt="prev3">
+                            <img src="assets/RedDead/rdr-prev-4.jpg" alt="prev4">
+                        </div>
+                        <div class="precio-con-descuento">
+                            <p class="descuento">-67%</p>
+                            <p class="p-incial">ARS$11.299,00</p>
+                            <p class="p-final">ARS$3.728,67</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenido-4">
+                    <div class="imagen">
+                        <a href=""><img src="assets/Cyberpunk/cyberpunk.jpg" class="d-block" alt="cyber"></a>
+                    </div>
+
+                    <div class="descripcion">
+                        <h4>Cyberpunk 2077</h4>
+                        <p>Cyberpunk 2077 es un RPG de aventura y acción de mundo abierto ambientado en el futuro sombrío de Night City, una peligrosa megalópolis obsesionada con el poder, el glamur y las incesantes modificaciones corporales.</p>
+                        <div class="img-prev">
+                            <img src="assets/Cyberpunk/cyber-prev-1.jpg" alt="prev1">
+                            <img src="assets/Cyberpunk/cyber-prev-2.jpg" alt="prev2">
+                            <img src="assets/Cyberpunk/cyber-prev-3.jpg" alt="prev3">
+                            <img src="assets/Cyberpunk/cyber-prev-4.jpg" alt="prev4">
+                        </div>
+                        <div class="precio">
+                            <p>ARS$9.999,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenido-5">
+                    <div class="imagen">
+                        <a href=""><img src="assets/Resident/Resident.jpg" class="d-block" alt="resident"></a>
+                    </div>
+
+                    <div class="descripcion">
+                        <h4>Resident Evil 4</h4>
+                        <p>La supervivencia es solo el comienzo. A seis años del desastre biológico en Raccoon City, Leon S. Kennedy, uno de los sobrevivientes, rastreó a la hija secuestrada del presidente hasta una aldea europea aislada.</p>
+                        <div class="img-prev">
+                            <img src="assets/Resident/re-prev-1.jpg" alt="prev1">
+                            <img src="assets/Resident/re-prev-2.jpg" alt="prev2">
+                            <img src="assets/Resident/re-prev-3.jpg" alt="prev3">
+                            <img src="assets/Resident/re-prev-4.jpg" alt="prev4">
+                        </div>
+                        <div class="precio-con-descuento">
+                            <p class="descuento">-34%</p>
+                            <p class="p-incial">ARS$12.958,00</p>
+                            <p class="p-final">ARS$8.552,28</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------- -->
+
+    <section class="sec-ofertas">
+        <div class="container">
+            <div class="titulo">
+                <h5>OFERTAS ESPECIALES</h5>
+                <button class="v-m btn btn-secondary">VER MÁS</button>
+            </div>
+
+            <div id="carouselOferta" class="carousel slide">
+                <div class="carousel-indicators indicador">
+                    <button type="button" data-bs-target="#carouselOfertaIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselOfertaIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselOfertaIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselOfertaIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+
+                <div class="carousel-inner carrusel">
+                    <div class="carousel-item active oferta-1">
+                        <div class="contenido">
+                            <div class="card tarjeta-1-1">
+                                <a href=""><img src="assets/Ofertas/Oferta1/deadspace.jpg" class="card-img-top" alt="deadspace"></a>
+                                <div class="card-body cuerpo">
+                                    <h5 class="card-title">OFERTA DE ENTRE SEMANA</h5>
+                                    <p class="card-text">La oferta termina el d/m a las 14:00</p>
+                                    <div class="precio-oferta">
+                                        <p class="desc">-40%</p>
+                                        <p class="precio-i">ARS$7.999,00</p>
+                                        <p class="precio-f">ARS$4.799,40</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-2-1">
+                                <a href=""><img src="assets/Ofertas/Oferta1/Arma3.jpg" class="card-img-top" alt="arma"></a>
+                                <div class="card-body cuerpo">
+                                    <h5 class="card-title">OFERTA DE ENTRE SEMANA</h5>
+                                    <p class="card-text">La oferta termina el d/m a las 14:00</p>
+                                    <div class="precio-oferta">
+                                        <p class="desc">-80%</p>
+                                        <p class="precio-i">ARS$4.700,00</p>
+                                        <p class="precio-f">ARS$940,00  </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-3-1">
+                                <a href=""><img src="assets/Ofertas/Oferta1/monster.jpg" class="card-img-top" alt="monster"></a>
+                                <div class="card-body cuerpo">
+                                    <h5 class="card-title">OFERTA DE ENTRE SEMANA</h5>
+                                    <p class="card-text">La oferta termina el d/m a las 18:00</p>
+                                    <div class="precio-oferta">
+                                        <p class="desc">-50%</p>
+                                        <p class="precio-i">ARS$16.009,00</p>
+                                        <p class="precio-f">ARS$8.004,50</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item oferta-2">
+                        <div class="contenido">
+                            <div class="card tarjeta-1-2">
+                                <a href=""><img src="assets/Ofertas/Oferta2/farmings22.jpg" class="card-img-top" alt="farmings22"></a>
+                                <div class="card-body cuerpo">
+                                    <div class="precio-oferta">
+                                        <p class="desc">-20%</p>
+                                        <p class="precio-i">ARS$3.849,00</p>
+                                        <p class="precio-f">ARS$3.079,20</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-2-2">
+                                <a href=""><img src="assets/Ofertas/Oferta2/avengers.jpg" class="card-img-top" alt="avengers"></a>
+                                <div class="card-body cuerpo">
+                                    <div class="precio-oferta">
+                                        <p class="desc">-90%</p>
+                                        <p class="precio-i">ARS$2.199,00</p>
+                                        <p class="precio-f">ARS$219,90</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-3-2">
+                                <a href=""><img src="assets/Ofertas/Oferta2/deathS.jpg" class="card-img-top" alt="deathS"></a>
+                                <div class="card-body cuerpo">
+                                    <div class="precio-oferta">
+                                        <p class="desc">-50%</p>
+                                        <p class="precio-i">ARS$2.899,00</p>
+                                        <p class="precio-f">ARS$1.449,50</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-4-2">
+                                <a href=""><img src="assets/Ofertas/Oferta2/detroit.jpg" class="card-img-top" alt="detroit"></a>
+                                <div class="card-body cuerpo">
+                                    <div class="precio-oferta">
+                                        <p class="desc">-50%</p>
+                                        <p class="precio-i">ARS$3.999,00</p>
+                                        <p class="precio-f">ARS$1.999,50</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-5-2">
+                                <a href=""><img src="assets/Ofertas/Oferta2/jedi.jpg" class="card-img-top" alt="jedi"></a>
+                                <div class="card-body cuerpo">
+                                    <div class="precio-oferta">
+                                        <p class="desc">-30%</p>
+                                        <p class="precio-i">ARS$8.999,00</p>
+                                        <p class="precio-f">ARS$6.299,30</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-6-2">
+                                <a href=""><img src="assets/Ofertas/Oferta2/subnautica.jpg" class="card-img-top" alt="subnautica"></a>
+                                <div class="card-body cuerpo">
+                                    <div class="precio-oferta">
+                                        <p class="desc">-50%</p>
+                                        <p class="precio-i">ARS$2.100,00</p>
+                                        <p class="precio-f">ARS$1.050,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item oferta-3">
+                        <div class="contenido">
+                            <div class="card tarjeta-1-3">
+                                <a href=""><img src="assets/Ofertas/Oferta3/editor.jpg" class="card-img-top" alt="editor"></a>
+                                <div class="card-body cuerpo">
+                                    <h5 class="card-title">OFERTAS DEL EDITOR</h5>
+                                    <p class="card-text">La oferta termina el d/m a las 14:00</p>
+                                    <div class="precio-oferta">
+                                        <p class="desc">-40%</p>
+                                        <p class="precio-i">ARS$5.000</p>
+                                        <p class="precio-f">ARS$3.000</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-2-3">
+                                <a href=""><img src="assets/Ofertas/Oferta3/assetto.jpg" class="card-img-top" alt="assetto"></a>
+                                <div class="card-body cuerpo">
+                                    <h5 class="card-title">OFERTA DE ENTRE SEMANA</h5>
+                                    <p class="card-text">La oferta termina el d/m a las 14:00</p>
+                                    <div class="precio-oferta">
+                                        <p class="desc">-70%</p>
+                                        <p class="precio-i">ARS$1.499,00</p>
+                                        <p class="precio-f">ARS$449,70</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-3-3">
+                                <a href=""><img src="assets/Ofertas/Oferta3/finalfantasy.jpg" class="card-img-top" alt="finalfantasy"></a>
+                                <div class="card-body cuerpo">
+                                    <div class="precio-oferta">
+                                        <p class="desc">-43%</p>
+                                        <p class="precio-i">ARS$7.700,00</p>
+                                        <p class="precio-f">ARS$4.389,00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-4-3">
+                                <a href=""><img src="assets/Ofertas/Oferta3/halo.jpg" class="card-img-top" alt="halo"></a>
+                                <div class="card-body cuerpo">
+                                    <div class="precio-oferta">
+                                        <p class="desc">-75%</p>
+                                        <p class="precio-i">ARS$3.999,00</p>
+                                        <p class="precio-f">ARS$999,75</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item oferta-4">
+                        <div class="contenido">
+                            <div class="card tarjeta-1-4">
+                                <a href=""><img src="assets/Ofertas/Oferta4/amnesia.jpg" class="card-img-top" alt="amnesia"></a>
+                                <div class="card-body cuerpo">
+                                    <h5 class="card-title">OFERTAS DEL EDITOR</h5>
+                                    <p class="card-text">La oferta termina el d/m a las 14:00</p>
+                                    <div class="precio-oferta">
+                                        <p class="desc">-40%</p>
+                                        <p class="precio-i">ARS$5.000</p>
+                                        <p class="precio-f">ARS$3.000</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-2-4">
+                                <a href=""><img src="assets/Ofertas/Oferta4/codMW.jpg" class="card-img-top" alt="codMW"></a>
+                                <div class="card-body cuerpo">
+                                    <div class="precio-oferta">
+                                        <p class="desc">-67%</p>
+                                        <p class="precio-i">ARS$8.999,00</p>
+                                        <p class="precio-f">ARS$2.969,67</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-3-4">
+                                <a href=""><img src="assets/Ofertas/Oferta4/codCW.jpg" class="card-img-top" alt="codCW"></a>
+                                <div class="card-body cuerpo">
+                                    <div class="precio-oferta">
+                                        <p class="desc">-67%</p>
+                                        <p class="precio-i">ARS$8.999,00</p>
+                                        <p class="precio-f">ARS$2.969,67</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-4-4">
+                                <a href=""><img src="assets/Ofertas/Oferta4/codS3.jpg" class="card-img-top" alt="codS3"></a>
+                                <div class="card-body cuerpo">
+                                    <div class="precio-oferta">
+                                        <p class="desc">-50%</p>
+                                        <p class="precio-i">ARS$20.000,00</p>
+                                        <p class="precio-f">ARS$10.000,00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card tarjeta-5-4">
+                                <a href=""><img src="assets/Ofertas/Oferta4/left4dead2.jpg" class="card-img-top" alt="left4dead2"></a>
+                                <div class="card-body cuerpo">
+                                    <div class="precio-oferta">
+                                        <p class="desc">-90%</p>
+                                        <p class="precio-i">ARS$765,00</p>
+                                        <p class="precio-f">ARS$76,50</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev anterior" type="button" data-bs-target="#carouselOferta" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next siguiente" type="button" data-bs-target="#carouselOferta" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="ofertas-responsive">
+                <div class="contenido-1">
+                    <div class="card tarjeta-1-1">
+                        <a href=""><img src="assets/Ofertas/Oferta1/deadspace.jpg" class="card-img-top" alt="deadspace"></a>
+                        <div class="card-body cuerpo">
+                            <h5 class="card-title">OFERTA DE ENTRE SEMANA</h5>
+                            <p class="card-text">La oferta termina el d/m a las 14:00</p>
+                            <div class="precio-oferta">
+                                <p class="desc">-40%</p>
+                                <p class="precio-i">ARS$7.999,00</p>
+                                <p class="precio-f">ARS$4.799,40</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-2-1">
+                        <a href=""><img src="assets/Ofertas/Oferta1/Arma3.jpg" class="card-img-top" alt="arma"></a>
+                        <div class="card-body cuerpo">
+                            <h5 class="card-title">OFERTA DE ENTRE SEMANA</h5>
+                            <p class="card-text">La oferta termina el d/m a las 14:00</p>
+                            <div class="precio-oferta">
+                                <p class="desc">-80%</p>
+                                <p class="precio-i">ARS$4.700,00</p>
+                                <p class="precio-f">ARS$940,00  </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-3-1">
+                        <a href=""><img src="assets/Ofertas/Oferta1/monster.jpg" class="card-img-top" alt="monster"></a>
+                        <div class="card-body cuerpo">
+                            <h5 class="card-title">OFERTA DE ENTRE SEMANA</h5>
+                            <p class="card-text">La oferta termina el d/m a las 18:00</p>
+                            <div class="precio-oferta">
+                                <p class="desc">-50%</p>
+                                <p class="precio-i">ARS$16.009,00</p>
+                                <p class="precio-f">ARS$8.004,50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenido-2">
+                    <div class="card tarjeta-1-2">
+                        <a href=""><img src="assets/Ofertas/Oferta2/farmings22.jpg" class="card-img-top" alt="farmings22"></a>
+                        <div class="card-body cuerpo">
+                            <div class="precio-oferta">
+                                <p class="desc">-20%</p>
+                                <p class="precio-i">ARS$3.849,00</p>
+                                <p class="precio-f">ARS$3.079,20</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-2-2">
+                        <a href=""><img src="assets/Ofertas/Oferta2/avengers.jpg" class="card-img-top" alt="avengers"></a>
+                        <div class="card-body cuerpo">
+                            <div class="precio-oferta">
+                                <p class="desc">-90%</p>
+                                <p class="precio-i">ARS$2.199,00</p>
+                                <p class="precio-f">ARS$219,90</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-3-2">
+                        <a href=""><img src="assets/Ofertas/Oferta2/deathS.jpg" class="card-img-top" alt="deathS"></a>
+                        <div class="card-body cuerpo">
+                            <div class="precio-oferta">
+                                <p class="desc">-50%</p>
+                                <p class="precio-i">ARS$2.899,00</p>
+                                <p class="precio-f">ARS$1.449,50</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-4-2">
+                        <a href=""><img src="assets/Ofertas/Oferta2/detroit.jpg" class="card-img-top" alt="detroit"></a>
+                        <div class="card-body cuerpo">
+                            <div class="precio-oferta">
+                                <p class="desc">-50%</p>
+                                <p class="precio-i">ARS$3.999,00</p>
+                                <p class="precio-f">ARS$1.999,50</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-5-2">
+                        <a href=""><img src="assets/Ofertas/Oferta2/jedi.jpg" class="card-img-top" alt="jedi"></a>
+                        <div class="card-body cuerpo">
+                            <div class="precio-oferta">
+                                <p class="desc">-30%</p>
+                                <p class="precio-i">ARS$8.999,00</p>
+                                <p class="precio-f">ARS$6.299,30</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-6-2">
+                        <a href=""><img src="assets/Ofertas/Oferta2/subnautica.jpg" class="card-img-top" alt="subnautica"></a>
+                        <div class="card-body cuerpo">
+                            <div class="precio-oferta">
+                                <p class="desc">-50%</p>
+                                <p class="precio-i">ARS$2.100,00</p>
+                                <p class="precio-f">ARS$1.050,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenido-3">
+                    <div class="card tarjeta-1-3">
+                        <a href=""><img src="assets/Ofertas/Oferta3/editor.jpg" class="card-img-top" alt="editor"></a>
+                        <div class="card-body cuerpo">
+                            <h5 class="card-title">OFERTAS DEL EDITOR</h5>
+                            <p class="card-text">La oferta termina el d/m a las 14:00</p>
+                            <div class="precio-oferta">
+                                <p class="desc">-40%</p>
+                                <p class="precio-i">ARS$5.000</p>
+                                <p class="precio-f">ARS$3.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-2-3">
+                        <a href=""><img src="assets/Ofertas/Oferta3/assetto.jpg" class="card-img-top" alt="assetto"></a>
+                        <div class="card-body cuerpo">
+                            <h5 class="card-title">OFERTA DE ENTRE SEMANA</h5>
+                            <p class="card-text">La oferta termina el d/m a las 14:00</p>
+                            <div class="precio-oferta">
+                                <p class="desc">-70%</p>
+                                <p class="precio-i">ARS$1.499,00</p>
+                                <p class="precio-f">ARS$449,70</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-3-3">
+                        <a href=""><img src="assets/Ofertas/Oferta3/finalfantasy.jpg" class="card-img-top" alt="finalfantasy"></a>
+                        <div class="card-body cuerpo">
+                            <div class="precio-oferta">
+                                <p class="desc">-43%</p>
+                                <p class="precio-i">ARS$7.700,00</p>
+                                <p class="precio-f">ARS$4.389,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-4-3">
+                        <a href=""><img src="assets/Ofertas/Oferta3/halo.jpg" class="card-img-top" alt="halo"></a>
+                        <div class="card-body cuerpo">
+                            <div class="precio-oferta">
+                                <p class="desc">-75%</p>
+                                <p class="precio-i">ARS$3.999,00</p>
+                                <p class="precio-f">ARS$999,75</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenido-4">
+                    <div class="card tarjeta-1-4">
+                        <a href=""><img src="assets/Ofertas/Oferta4/amnesia.jpg" class="card-img-top" alt="amnesia"></a>
+                        <div class="card-body cuerpo">
+                            <h5 class="card-title">OFERTAS DEL EDITOR</h5>
+                            <p class="card-text">La oferta termina el d/m a las 14:00</p>
+                            <div class="precio-oferta">
+                                <p class="desc">-40%</p>
+                                <p class="precio-i">ARS$5.000</p>
+                                <p class="precio-f">ARS$3.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-2-4">
+                        <a href=""><img src="assets/Ofertas/Oferta4/codMW.jpg" class="card-img-top" alt="codMW"></a>
+                        <div class="card-body cuerpo">
+                            <div class="precio-oferta">
+                                <p class="desc">-67%</p>
+                                <p class="precio-i">ARS$8.999,00</p>
+                                <p class="precio-f">ARS$2.969,67</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-3-4">
+                        <a href=""><img src="assets/Ofertas/Oferta4/codCW.jpg" class="card-img-top" alt="codCW"></a>
+                        <div class="card-body cuerpo">
+                            <div class="precio-oferta">
+                                <p class="desc">-67%</p>
+                                <p class="precio-i">ARS$8.999,00</p>
+                                <p class="precio-f">ARS$2.969,67</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-4-4">
+                        <a href=""><img src="assets/Ofertas/Oferta4/codS3.jpg" class="card-img-top" alt="codS3"></a>
+                        <div class="card-body cuerpo">
+                            <div class="precio-oferta">
+                                <p class="desc">-50%</p>
+                                <p class="precio-i">ARS$20.000,00</p>
+                                <p class="precio-f">ARS$10.000,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tarjeta-5-4">
+                        <a href=""><img src="assets/Ofertas/Oferta4/left4dead2.jpg" class="card-img-top" alt="left4dead2"></a>
+                        <div class="card-body cuerpo">
+                            <div class="precio-oferta">
+                                <p class="desc">-90%</p>
+                                <p class="precio-i">ARS$765,00</p>
+                                <p class="precio-f">ARS$76,50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------- -->
+    
+    <section class="sec-masvendidos">
+        <div class="container">
+            <div class="titulo">
+                <h5>MÁS VENDIDOS</h5>
+            </div>
+
+            <div class="tarjetas">
+                <div class="card">
+                    <a href=""><img src="assets/MasVendidos/mortalk1.avif" class="card-img-top" alt="mortalk1"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Mortal Kombat 1</h5>
+                        <p class="precio">ARS$35.513,88</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href=""><img src="assets/MasVendidos/minecraft.avif" class="card-img-top" alt="minecraft"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Minecraft Java Edition</h5>
+                        <p class="precio">ARS$11.212,35</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href=""><img src="assets/MasVendidos/thelastofus.webp" class="card-img-top" alt="thelastofus"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">The Last Of Us Parte 1</h5>
+                        <p class="precio">ARS$22.428,44</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href=""><img src="assets/MasVendidos/spiderman.webp" class="card-img-top" alt="spiderman"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Spider-Man Remastered</h5>
+                        <p class="precio">ARS$22.428,44</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href=""><img src="assets/MasVendidos/witcher3.avif" class="card-img-top" alt="witcher3"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">The Witcher 3</h5>
+                        <div class="precio">
+                            <p>ARS$11.212,35</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a href="" class="ver-mas">Ver Más</a>
+            <hr>
+        </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------- -->
+
+    <section class="sec-proxlanzamientos">
+        <div class="container">
+            <div class="titulo">
+                <h5>PROXIMOS LANZAMIENTOS</h5>
+            </div>
+
+            <div class="tarjetas">
+                <div class="card">
+                    <a href=""><img src="assets/ProxLanzamientos/fc24.avif" class="card-img-top" alt="fc24"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">EA Sports FC 24</h5>
+                        <p class="precio">ARS$26.167,14</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href=""><img src="assets/ProxLanzamientos/cities2.avif" class="card-img-top" alt="cities2"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Cities Skylines II</h5>
+                        <p class="precio">ARS$18.689,75</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href=""><img src="assets/ProxLanzamientos/payday3.avif" class="card-img-top" alt="payday3"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">PAYDAY 3</h5>
+                        <p class="precio">ARS$14.951.14</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href=""><img src="assets/ProxLanzamientos/lordsfallen.webp" class="card-img-top" alt="lordsfallen"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">The Lords of the Fallen</h5>
+                        <p class="precio">ARS$22.428,44</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href=""><img src="assets/ProxLanzamientos/assassins.avif" class="card-img-top" alt="assassins"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Assassin's Creed Mirage</h5>
+                        <div class="precio">
+                            <p>ARS$18.689,75</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a href="" class="ver-mas">Ver Más</a>
+            <hr>
+        </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------- -->
+
+    <section class="sec-footer">
+        <div class="container">
+            <div class="metodospago">
+                <div class="pagos">
+                    <p>Métodos de pago:</p>
+                    <img src="assets/footer/pagos.png" alt="">
+                    <p>y 200+ más</p>
+                </div>
+                <div class="divisa">
+                    <button type="button" class="btn-divisa" data-bs-toggle="modal" data-bs-target="#modal-divisa">
+                        <i class="bi bi-globe"></i> Es / ARS
+                    </button>
+
+                    <div class="modal" id="modal-divisa">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>Configurar idioma y moneda</h5>
+                                    <p>Ajusta los textos y precios de A20 según tus preferencias.</p>
+                                    
+                                    <h6>Regiones</h6>    
+                                    <select name="" id="" class="regiones">
+                                        <option value=""><img src="assets/footer/regiones/alemania.svg" alt="">Alemania</option>
+                                        <option value="">España</option>
+                                        <option value="">Europa</option>
+                                        <option value="">Francia</option>
+                                        <option value="">Gran Bretaña</option>
+                                        <option value="">Estados Unidos</option>
+                                        <option value="">Australia</option>
+                                        <option value="">Canadá</option>
+                                        <option value="">República Checa</option>
+                                        <option value="">Hungría</option>
+                                        <option value="">Italia</option>
+                                        <option value="">Países Bajos</option>  
+                                        <option value="">Corea del Sur</option>
+                                        <option value="">Polonia</option>
+                                        <option value="">Portugal</option>
+                                        <option value="">Rusia</option>
+                                        <option value="">México</option>
+                                        <option value="">Brasil</option>
+                                        <option value="">Japón</option>
+                                        <option value="">LATAM</option>
+                                        <option value="">Argentina</option>
+                                        <option value="">Turquía</option>
+                                        <option value="">Rumanía</option>
+                                    </select>
+
+                                    <h6>Idioma</h6>
+                                    <select name="" id="" class="idiomas">
+                                        <option value="">Ingles</option>
+                                        <option value="">Frances</option>
+                                        <option value="">Aleman</option>
+                                        <option value="">Italiano</option>
+                                        <option value="">Polaco</option>
+                                        <option value="">Portugues</option>
+                                        <option value="">Rumano</option>
+                                        <option value="">Español</option>
+                                    </select>
+
+                                    <h6>Divisa</h6>
+                                    <select name="" id="" class="divisas">
+                                        <option value="">ARS|Peso argentino</option>
+                                        <option value="">AUD|Dólar australiano</option>
+                                        <option value="">CLP|Peso chileno</option>
+                                        <option value="">EUR|Euro europeo</option>
+                                        <option value="">MXN|Peso mexicano</option>
+                                        <option value="">USD|Dólar estadounidense</option>
+                                    </select>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="A20-footer">
+                    <h6>A20</h6>
+                    <a href=""><p>Quiénes somos</p></a>
+                    <a href=""><p>Contacto</p></a>
+                    <a href=""><p>Fiabilidad</p></a>
+                    <a href=""><p>Ley de Servicios digitales</p></a>
+                </div>
+
+                <div class="cooperacion-footer">
+                    <h6>Cooperación</h6>
+                    <a href=""><p>Asociación de marketing</p></a>
+                    <a href=""><p>Programa de afiliados</p></a>
+                    <a href=""><p>Reseñas</p></a>
+                </div>
+
+                <div class="compradores-footer">
+                    <h6>Para Compradores</h6>
+                    <a href=""><p>Asistencia a compradores</p></a>
+                    <a href=""><p>Cómo comprar</p></a>
+                    <a href=""><p>Permanece protegido</p></a>
+                    <a href=""><p>Mapa del sitio</p></a>
+                </div>
+
+                <div class="vendedores-footer">
+                    <h6>Para Vendedores</h6>
+                    <a href=""><p>Asistencia a vendedores</p></a>
+                    <a href=""><p>Cómo vender</p></a>
+                    <a href=""><p>Importación mediante API</p></a>
+                    <a href=""><p>Centro de negocios</p></a>
+                </div>
+
+                <div class="condiciones">
+                    <h6>Condiciones de uso y privacidad</h6>
+                    <a href=""><p>Término y condiciones</p></a>
+                    <a href=""><p>Privacidad y cookies</p></a>
+                </div>
+
+                <div class="contacto">
+                    <img src="assets/footer/contacto/wpp.png" alt="">
+                    <img src="assets/footer/contacto/facebook.png" alt="">
+                    <img src="assets/footer/contacto/twitter.png" alt="">
+                    <img src="assets/footer/contacto/instagram.png" alt="">
+                    <img src="assets/footer/contacto/reddit.png" alt="">
+                </div>
+                
+            </div>
+
+            <div class="info-resp">
+                <div class="a20 dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">A20</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">Quiénes somos</a></li>
+                        <li><a href="" class="dropdown-item">Contacto</a></li>
+                        <li><a href="" class="dropdown-item">Fiabilidad</a></li>
+                        <li><a href="" class="dropdown-item">Ley de Servicios digitales</a></li>
+                    </ul>
+                </div>
+
+                <div class="cooperacion dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Cooperación</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">Asociación de marketing</a></li>
+                        <li><a href="" class="dropdown-item">Programa de afiliados</a></li>
+                        <li><a href="" class="dropdown-item">Reseñas</a></li>
+                    </ul>
+                </div>
+
+                <div class="compradores dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Compradores</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">Asistencia a compradores</a></li>
+                        <li><a href="" class="dropdown-item">Cómo comprar</a></li>
+                        <li><a href="" class="dropdown-item">Permanece protegido</a></li>
+                        <li><a href="" class="dropdown-item">Mapa del sitio</a></li>
+                    </ul>
+                </div>
+
+                <div class="vendedores dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Vendedores</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">Asistencia a vendedores</a></li>
+                        <li><a href="" class="dropdown-item">Cómo vender</a></li>
+                        <li><a href="" class="dropdown-item">Importación mediante API</a></li>
+                        <li><a href="" class="dropdown-item">Centro de negocios</a></li>
+                    </ul>
+                </div>
+
+                <div class="condiciones dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Condiciones</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">Término y condiciones</a></li>
+                        <li><a href="" class="dropdown-item">Privacidad y cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="politica">
+                <p>El uso de este sitio web implica la aceptación de los <strong>Términos y condiciones y Política de privacidad</strong>. Todos los derechos de autor, marcas comerciales, marcas de servicio pertenecen a sus correspondientes propietarios.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------- -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<script>
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+    })
+</script>
+</html>

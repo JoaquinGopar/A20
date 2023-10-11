@@ -1,0 +1,894 @@
+@use "global";
+
+@mixin descripcion-car{
+    width: 21.5rem;
+    border: 2px solid black;
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+}
+
+.sec-destacados{
+    .container{
+        .destacados-responsive{
+            display: none;
+            .contenido-1{
+                display: flex;
+
+                .imagen{
+                    img{
+                        width: 45rem;
+                        height: 26rem;
+                        margin-left: 3rem;
+                        border: 2px solid black
+                    }
+                }
+                .descripcion{
+                    @include descripcion-car();
+                    background-color: rgba($color: #CCB27F, $alpha: 0.8);
+                    
+                    
+                    .img-prev{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        img{
+                            width: 8rem;
+                            padding-bottom: 0.5rem;
+                            cursor: pointer;
+
+                            &:hover{
+                                transform: scale(2.5);
+                                transition: 1s;
+                            }
+                        }
+                    }
+                    
+                    .precio{
+                        display: flex;
+                        font-weight: 600;
+                    }
+
+                    .precio-con-descuento{
+                        display: flex;
+
+                        .descuento{
+                            cursor: pointer;
+                            background-color: green;
+                            color: white;
+                            padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+                            border: 1px solid black;
+                        }
+
+                        .p-incial{
+                            cursor: pointer;
+                            background-color: #344654;
+                            color: whitesmoke;
+                            padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+                            border: 1px solid black;
+                            text-decoration: line-through;
+                        }
+
+                        .p-final{
+                            cursor: pointer;
+                            background-color: green;
+                            color: white;
+                            padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+                            border: 1px solid black;
+                        }
+                        
+                    }
+                }
+            }
+
+            .contenido-2{
+                @extend .contenido-1;
+            }
+
+            .contenido-3{
+                @extend .contenido-1;
+            }
+
+            .contenido-4{
+                @extend .contenido-1;
+            }
+
+            .contenido-5{
+                @extend .contenido-1;
+            }
+        }
+    }
+}
+
+.sec-ofertas{
+    .container{
+        .ofertas-responsive{
+            display: none;
+            .contenido-1{
+                display: flex;
+                gap: 3.3rem;
+                .tarjeta-1-1{
+                    width: 20rem;
+
+                    .cuerpo{
+                        background-color: #1B5C7F;
+                        color: white;
+                    
+                        .precio-oferta{
+                            display: flex;
+                            .desc{
+                                background-color: green;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                            }
+                            .precio-i{
+                                background-color: #344654;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                                text-decoration: line-through
+                            }
+                            .precio-f{
+                                background-color: green;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                            }
+                        }
+                    }
+                }
+            
+                .tarjeta-2-1{
+                    @extend .tarjeta-1-1;
+                    .cuerpo{
+                        .precio-oferta{
+                            .desc{
+                                background-color: green;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                            }
+                        }
+                    }
+                }
+
+                .tarjeta-3-1{
+                    @extend .tarjeta-1-1;
+                    .cuerpo{
+                        .precio-oferta{
+                            .desc{
+                                background-color: green;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .contenido-2{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 0.4rem;
+                .tarjeta-1-2{
+                    width: 20rem;
+                    height: 14rem;
+
+                    .cuerpo{
+                        background-color: #1B5C7F;
+                        color: white;
+                    
+                        .precio-oferta{
+                            display: flex;
+                            .desc{
+                                background-color: green;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                            }
+                            .precio-i{
+                                background-color: #344654;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                                text-decoration: line-through
+                            }
+                            .precio-f{
+                                @extend .desc;
+                            }
+                        }
+                    }
+                }
+
+                .tarjeta-2-2{
+                    @extend .tarjeta-1-2;
+                }
+
+                .tarjeta-3-2{
+                    @extend .tarjeta-1-2;
+                }
+
+                .tarjeta-4-2{
+                    @extend .tarjeta-1-2;
+                    margin-top: 1.5rem;
+                }
+
+                .tarjeta-5-2{
+                    @extend .tarjeta-1-2;
+                    margin-top: 1.5rem;
+                }
+
+                .tarjeta-6-2{
+                    @extend .tarjeta-1-2;
+                    margin-top: 1.5rem;
+                }
+            }
+
+            .contenido-3{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 0.4rem;
+                
+
+                .tarjeta-1-3{
+                    width: 20rem;
+                    grid-row: 1 / 3;
+                    .cuerpo{
+                        background-color: #1B5C7F;
+                        color: white;
+                    
+                        .precio-oferta{
+                            display: flex;
+                            .desc{
+                                background-color: green;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                            }
+                            .precio-i{
+                                background-color: #344654;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                                text-decoration: line-through
+                            }
+                            .precio-f{
+                                @extend .desc;
+                            }
+                        }
+                    }
+                }
+
+                .tarjeta-2-3{
+                    @extend .tarjeta-1-3;
+                }
+
+                .tarjeta-3-3{
+                    width: 20rem;
+                    .cuerpo{
+                        background-color: #1B5C7F;
+                        color: white;
+                    
+                        .precio-oferta{
+                            display: flex;
+                            .desc{
+                                background-color: green;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                            }
+                            .precio-i{
+                                background-color: #344654;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                                text-decoration: line-through
+                            }
+                            .precio-f{
+                                @extend .desc;
+                            }
+                        }
+                    }
+                }
+
+                .tarjeta-4-3{
+                    @extend .tarjeta-3-3;
+                }
+            }
+
+            .contenido-4{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 0.4rem;
+
+                .tarjeta-1-4{
+                    width: 20rem;
+                    grid-row: 1 / 3;
+                    .cuerpo{
+                        background-color: #1B5C7F;
+                        color: white;
+                    
+                        .precio-oferta{
+                            display: flex;
+                            .desc{
+                                background-color: green;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                            }
+                            .precio-i{
+                                background-color: #344654;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                                text-decoration: line-through
+                            }
+                            .precio-f{
+                                @extend .desc;
+                            }
+                        }
+                    }
+                }
+
+                .tarjeta-2-4{
+                    width: 20rem;
+                    .cuerpo{
+                        background-color: #1B5C7F;
+                        color: white;
+                    
+                        .precio-oferta{
+                            display: flex;
+                            .desc{
+                                background-color: green;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                            }
+                            .precio-i{
+                                background-color: #344654;
+                                padding: 0.3rem;
+                                border: 1px solid black;
+                                text-decoration: line-through
+                            }
+                            .precio-f{
+                                @extend .desc;
+                            }
+                        }
+                    }
+                }
+
+                .tarjeta-3-4{
+                    @extend .tarjeta-2-4;
+                }
+
+                .tarjeta-4-4{
+                    @extend .tarjeta-2-4;
+                }
+
+                .tarjeta-5-4{
+                    @extend .tarjeta-2-4;
+                }
+            }
+        }
+    }
+}
+
+
+// Media Query
+
+@media (max-width: 1400px){
+
+    .sec-destacados{
+        .container{
+            padding: 3rem 0 0 0;
+            margin: auto;
+
+            .carousel{
+                display: none;
+            }
+
+            .destacados-responsive{
+                display: flex;
+                overflow-x: scroll;
+            }
+        }
+    }
+
+    .sec-ofertas{
+        .container{
+            padding: 3rem 0 0 0;
+            margin: auto;
+
+            .carousel{
+                display: none;
+            }
+
+            .ofertas-responsive{
+                display: flex;
+                gap: 2rem;
+                overflow-x: scroll;
+            }
+        }
+    }
+
+    .sec-masvendidos{
+        .container{
+            .tarjetas{
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .sec-proxlanzamientos{
+        .container{
+            .tarjetas{
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .sec-footer{
+        .container{
+            max-width: 100%;
+            .politica{
+                p{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .navbar{
+        .container-fluid{
+            .collapse{
+                border-top: 1px solid black;
+                .navbar-nav{
+                    .busqueda{
+                        margin-top: 0.5rem;
+                        margin-left: 0;
+                        margin-bottom: 2rem;
+
+                        .input-busqueda{
+                            input{
+                                width: 45rem;
+                                height: 3rem;
+                                font-size: 1.3rem;
+                            }
+                        }
+
+                        .lupa{
+                            .btn{
+                                height: 3rem;
+                            }
+                        }
+                    }
+                }
+
+                .formulario{
+                    margin-bottom: 1rem;
+
+                    .cuenta{
+                        i{
+                            font-size: 1.8rem;
+                            padding: 0.6rem 0.85rem;
+                        }
+
+                        a{
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    .carro{
+                        i{
+                            font-size: 1.7rem;
+                            padding: 0.7rem 0.9rem;
+                        }
+                    }
+                }
+
+                .contacto{
+                    display: flex;
+                    margin-top: 3rem;
+                    margin-bottom: 2rem;
+                    h4{
+                        margin-right: 2rem;
+                        color: white;
+                    }
+
+                    img{
+                        width: 30px;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .sec-destacados{
+        .container{
+            margin: auto;
+            padding: 2rem 0 0 0;
+        }
+    }
+
+    .sec-ofertas{
+        .container{
+            margin: auto;
+            padding: 2rem 0 0 0;
+            
+            .titulo{
+                gap: 50%;
+            }
+        }
+    }
+    
+    .sec-footer{
+        .container{
+            .metodospago{
+                .divisa{
+                    margin-left: 30%;
+                }
+            }
+
+            .info{
+                justify-content: space-around;
+                .contacto{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .navbar{
+        .container-fluid{
+            .collapse{
+                .navbar-nav{
+                    .busqueda{
+                        .input-busqueda{
+                            input{
+                                width: 38rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sec-destacados{
+        .container{
+            margin: 0;
+            max-width: 95%;
+            padding: 1rem 0 0 1rem;
+        }
+    }
+
+    .sec-ofertas{
+        .container{
+            margin: 2rem;
+            max-width: 95%;
+            padding: 1rem 1rem 0 0;
+        }
+    }
+
+    .sec-masvendidos{
+        .container{
+            margin: 0;
+            max-width: 100%;
+            .tarjetas{
+                .card{
+                    width: 13rem;
+                }
+            }
+        }
+    }
+
+    .sec-proxlanzamientos{
+        .container{
+            margin: 0;
+            max-width: 100%;
+            .tarjetas{
+                .card{
+                    width: 13rem;
+                }
+            }
+        }
+    }
+
+    .sec-footer{
+        height: 30rem;
+        .container{
+            .metodospago{
+                display: none;
+            }
+
+            .info{
+                display: grid;
+                height: 25rem;
+                background-color: #444;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1rem;
+
+                h6{
+                    margin-top: 1rem;
+                }
+            }
+
+            .politica{
+                margin-top: 1rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+    .navbar{
+        .container-fluid{
+            .collapse{
+                .navbar-nav{
+                    .busqueda{
+                        .input-busqueda{
+                            input{
+                                width: 25rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sec-destacados{
+        .container{
+            .destacados-responsive{
+                .contenido-1{
+                    .imagen{
+                        img{
+                            width: 30rem;
+                            height: 20rem;
+                        }
+                    }
+
+                    .descripcion{
+                        width: 20rem;
+                        .img-prev{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+
+    .sec-ofertas{
+        .container{
+            .titulo{
+                gap: 35%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .navbar{
+        .container-fluid{
+            .collapse{
+                .navbar-nav{
+                    .busqueda{
+                        .input-busqueda{
+                            input{
+                                width: 20rem;
+                                height: 3rem;
+                                font-size: 1.2rem;
+                            }
+                        }
+
+                        .sel-categorias{
+                            select{
+                                width: 4rem;
+                                height: 3rem;
+                            }
+
+                            .lupa{
+                                .btn{
+                                    height: 3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .formulario{
+                    flex-direction: column;
+                    gap: 2rem;
+                    .cuenta{
+                        a{
+                            font-size: 1.2rem;
+                        }
+                        i{
+                            font-size: 1.2rem;
+                            padding: 0.4rem 0.65rem;
+                        }
+                    }
+                    .carro{
+                        i{
+                            font-size: 1.2rem;
+                            padding: 0.4rem 0.65rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sec-destacados{
+        .container{
+            .destacados-responsive{
+                .descripcion{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .sec-ofertas{
+        .container{
+            margin-left: 10px;
+            .titulo{
+                margin-left: 0;
+                margin-right: 0;
+                gap: 20%;
+            }
+        }
+    }
+
+    .sec-masvendidos{
+        .container{
+            .titulo{
+                text-align: center;
+            }
+        }
+    }
+
+    .sec-proxlanzamientos{
+        .container{
+            .titulo{
+                text-align: center;
+            }
+        }
+    }
+
+    .sec-masvendidos{
+        .container{
+            .tarjetas{
+                .card{
+                    width: 10rem;
+                }
+            }
+        }
+    }
+
+    .sec-proxlanzamientos{
+        .container{
+            .tarjetas{
+                .card{
+                    width: 10rem;
+                }
+            }
+        }
+    }
+
+    .sec-footer{
+        height: auto;
+        .container{
+            .info{
+                display: none;
+            }
+
+            .info-resp{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 1rem 0 2rem 0;
+
+                button{
+                    color: white;
+                }
+
+            }
+
+            .politica{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    .navbar{
+        .container-fluid{
+            .collapse{
+                .navbar-nav{
+                    .busqueda{
+                        .input-busqueda{
+                            input{
+                                width: 15rem;
+                            }
+                        }
+                    }
+                }
+
+                .formulario{
+                    .cuenta{
+                        margin: 0;
+                        a{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                
+                .contacto{
+                    h4{
+                        font-size: 1.2rem;
+                        margin-right: 1rem;
+                    }
+                    img{
+                        width: 20px;
+                    }
+                }  
+            }
+        }
+    }
+
+    .sec-destacados{
+        .container{
+            .titulo{
+                margin-left: 0;
+                h5{
+                    font-size: 1rem;
+                }
+            }
+            .destacados-responsive{
+                .contenido-1{
+                    .imagen{
+                        img{
+                            width: 25rem;
+                            height: 15rem;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .sec-ofertas{
+        .container{
+            .titulo{
+                gap: 18%;
+                h5{
+                    font-size: 1rem;
+                }
+
+                button{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    .sec-masvendidos{
+        .container{
+            .tarjetas{
+                .card{
+                    width: 10rem;
+                }
+            }
+        }
+    }
+
+    .sec-proxlanzamientos{
+        .container{
+            .tarjetas{
+                .card{
+                    width: 10rem;
+                }
+            }
+        }
+    }
+}

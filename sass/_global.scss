@@ -1,0 +1,671 @@
+$color-principal: #07A8D5;
+
+@mixin bordes-menu{
+    border-left: 1px solid $color-principal;
+    border-bottom: 1px solid $color-principal;
+    border-right: 1px solid $color-principal;
+    border-top: none;
+
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+@mixin descripcion-car{
+    width: 21.5rem;
+    border: 2px solid black;
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+}
+
+.cuerpo{
+    background-color: #ebebeb;
+}
+
+.navbar{
+    background-color: #444;
+    .container-fluid{
+        .logo{
+            width: 7rem;
+            margin-top: 0.5rem;
+        
+            &:hover{
+                transform: scale(1.1);
+                transition: 0.3s;
+            }
+        }
+
+        .collapse{
+            .navbar-nav{
+                .busqueda{
+                    display: flex;
+                    margin-left: 8rem;
+                    .input-busqueda{
+                        input{
+                            width: 28rem;
+                            height: 2.3rem;
+                            border-radius: 0.4rem;
+                            border-top-right-radius: 0;
+                            border-bottom-right-radius: 0;
+                            border: 2px solid #033442;
+                            outline: none;
+
+                            &:hover{
+                                box-shadow: 0 0 15px $color-principal;
+                            }
+            
+                            &:focus{
+                                border: 2px solid #033442;
+                                box-shadow: 0 0 15px $color-principal;
+                            }
+                        }
+                    }
+
+                    .lupa{
+                        .btn{
+                            border-top-left-radius: 0;
+                            border-bottom-left-radius: 0;
+                            height: 2.3rem;
+                            border: 2px solid black;
+                            border-left: 0;
+                            background-color: $color-principal;
+                            
+                            i{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+            .contacto{
+                display: none;
+            }
+        }
+    }
+}
+
+.sec-nav{
+    .parte2{
+        background-color: #444;
+        border-top: 1px solid black;
+        .categorias{
+            margin-top: 2rem;
+            justify-content: center;
+            gap: 6rem;
+            .menu-categ{
+                width: 15rem;
+                @include bordes-menu();
+                li{
+                    &:hover{
+                        box-shadow: 0 0 5px $color-principal;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+.sec-destacados{
+    .container{
+        padding: 2rem 5rem 0 5rem;
+
+        .titulo{
+            margin-left: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        .slide{
+            .indicador{
+                margin: 0;
+            }
+
+            .carousel{
+                .carrusel-1{
+                    .contenido{
+                        display: flex;
+
+                        .descripcion{
+                            @include descripcion-car();
+                            background-color: rgba($color: #CCB27F, $alpha: 0.8);
+                            
+                            
+                            .img-prev{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                img{
+                                    width: 8rem;
+                                    padding-bottom: 0.5rem;
+                                    cursor: pointer;
+
+                                    &:hover{
+                                        transform: scale(2.5);
+                                        transition: 1s;
+                                    }
+                                }
+                            }
+                            
+                            .precio{
+                                display: flex;
+                                font-weight: 600;
+                            }
+
+                            .precio-con-descuento{
+                                display: flex;
+
+                                .descuento{
+                                    cursor: pointer;
+                                    background-color: green;
+                                    color: white;
+                                    padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+                                    border: 1px solid black;
+                                }
+
+                                .p-incial{
+                                    cursor: pointer;
+                                    background-color: #344654;
+                                    color: whitesmoke;
+                                    padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+                                    border: 1px solid black;
+                                    text-decoration: line-through;
+                                }
+
+                                .p-final{
+                                    cursor: pointer;
+                                    background-color: green;
+                                    color: white;
+                                    padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+                                    border: 1px solid black;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+
+                .carrusel-2{
+                    .contenido{
+                        .descripcion{
+                            background-color: rgba($color: #DFDCD5, $alpha: 0.8);
+                        }
+                    }
+                }
+
+                .carrusel-3{
+                    .contenido{
+                        .descripcion{
+                            background-color: rgba($color: #A00C18, $alpha: 0.8);
+                            color: white;
+                        }
+                    }
+                }
+
+                .carrusel-4{
+                    .contenido{
+                        .descripcion{
+                            background-color: rgba($color: #B2AA01, $alpha: 0.8);
+                        }
+                    }
+                }
+
+                .carrusel-5{
+                    .contenido{
+                        .descripcion{
+                            background-color: rgba($color: #272725, $alpha: 0.8);
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
+
+.sec-ofertas{
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    .container{
+        padding: 2rem 5rem 0 5rem;
+
+        .titulo{
+            display: flex;
+            margin-left: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            gap: 70%;
+        }
+
+        .slide{
+            .indicador{
+                margin: 0;
+            }
+            .carrusel{
+                    padding-left: 3rem;
+                .oferta-1{
+                    .contenido{
+                        display: flex;
+                        gap: 3.3rem;
+                        .tarjeta-1-1{
+                            width: 20rem;
+
+                            .cuerpo{
+                                background-color: #1B5C7F;
+                                color: white;
+                            
+                                .precio-oferta{
+                                    display: flex;
+                                    .desc{
+                                        background-color: green;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                    }
+                                    .precio-i{
+                                        background-color: #344654;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                        text-decoration: line-through
+                                    }
+                                    .precio-f{
+                                        background-color: green;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                    }
+                                }
+                            }
+                        }
+                    
+                        .tarjeta-2-1{
+                            @extend .tarjeta-1-1;
+                            .cuerpo{
+                                .precio-oferta{
+                                    .desc{
+                                        background-color: green;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                    }
+                                }
+                            }
+                        }
+
+                        .tarjeta-3-1{
+                            @extend .tarjeta-1-1;
+                            .cuerpo{
+                                .precio-oferta{
+                                    .desc{
+                                        background-color: green;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                    }
+                                }
+                            }
+                        }
+                    }   
+                }
+
+                .oferta-2{
+                    .contenido{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-rows: 1fr 1fr;
+                        gap: 0.4rem;
+                        .tarjeta-1-2{
+                            width: 20rem;
+                            height: 14rem;
+
+                            .cuerpo{
+                                background-color: #1B5C7F;
+                                color: white;
+                            
+                                .precio-oferta{
+                                    display: flex;
+                                    .desc{
+                                        background-color: green;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                    }
+                                    .precio-i{
+                                        background-color: #344654;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                        text-decoration: line-through
+                                    }
+                                    .precio-f{
+                                        @extend .desc;
+                                    }
+                                }
+                            }
+                        }
+
+                        .tarjeta-2-2{
+                            @extend .tarjeta-1-2;
+                        }
+
+                        .tarjeta-3-2{
+                            @extend .tarjeta-1-2;
+                        }
+
+                        .tarjeta-4-2{
+                            @extend .tarjeta-1-2;
+                            margin-top: 1.5rem;
+                        }
+
+                        .tarjeta-5-2{
+                            @extend .tarjeta-1-2;
+                            margin-top: 1.5rem;
+                        }
+
+                        .tarjeta-6-2{
+                            @extend .tarjeta-1-2;
+                            margin-top: 1.5rem;
+                        }
+                    }
+                }
+
+                .oferta-3{
+                    .contenido{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-rows: 1fr 1fr;
+                        gap: 0.4rem;
+                        
+
+                        .tarjeta-1-3{
+                            width: 20rem;
+                            grid-row: 1 / 3;
+                            .cuerpo{
+                                background-color: #1B5C7F;
+                                color: white;
+                            
+                                .precio-oferta{
+                                    display: flex;
+                                    .desc{
+                                        background-color: green;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                    }
+                                    .precio-i{
+                                        background-color: #344654;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                        text-decoration: line-through
+                                    }
+                                    .precio-f{
+                                        @extend .desc;
+                                    }
+                                }
+                            }
+                        }
+
+                        .tarjeta-2-3{
+                            @extend .tarjeta-1-3;
+                        }
+
+                        .tarjeta-3-3{
+                            width: 20rem;
+                            .cuerpo{
+                                background-color: #1B5C7F;
+                                color: white;
+                            
+                                .precio-oferta{
+                                    display: flex;
+                                    .desc{
+                                        background-color: green;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                    }
+                                    .precio-i{
+                                        background-color: #344654;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                        text-decoration: line-through
+                                    }
+                                    .precio-f{
+                                        @extend .desc;
+                                    }
+                                }
+                            }
+                        }
+
+                        .tarjeta-4-3{
+                            @extend .tarjeta-3-3;
+                        }
+                    }
+                }
+
+                .oferta-4{
+                    .contenido{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-rows: 1fr 1fr;
+                        gap: 0.4rem;
+
+                        .tarjeta-1-4{
+                            width: 20rem;
+                            grid-row: 1 / 3;
+                            .cuerpo{
+                                background-color: #1B5C7F;
+                                color: white;
+                            
+                                .precio-oferta{
+                                    display: flex;
+                                    .desc{
+                                        background-color: green;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                    }
+                                    .precio-i{
+                                        background-color: #344654;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                        text-decoration: line-through
+                                    }
+                                    .precio-f{
+                                        @extend .desc;
+                                    }
+                                }
+                            }
+                        }
+
+                        .tarjeta-2-4{
+                            width: 20rem;
+                            .cuerpo{
+                                background-color: #1B5C7F;
+                                color: white;
+                            
+                                .precio-oferta{
+                                    display: flex;
+                                    .desc{
+                                        background-color: green;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                    }
+                                    .precio-i{
+                                        background-color: #344654;
+                                        padding: 0.3rem;
+                                        border: 1px solid black;
+                                        text-decoration: line-through
+                                    }
+                                    .precio-f{
+                                        @extend .desc;
+                                    }
+                                }
+                            }
+                        }
+
+                        .tarjeta-3-4{
+                            @extend .tarjeta-2-4;
+                        }
+
+                        .tarjeta-4-4{
+                            @extend .tarjeta-2-4;
+                        }
+
+                        .tarjeta-5-4{
+                            @extend .tarjeta-2-4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sec-masvendidos{
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    .container{
+        .titulo{
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        .tarjetas{
+            display: flex;
+            margin-bottom: 1rem;
+            justify-content: space-around;
+
+            .card{
+                width: 16rem;
+                .card-body{
+                    color: white;
+                    background-color: #1B5C7F;
+
+                    p{
+                        width: 8rem;
+                        padding: 0.3rem;
+                        text-align: center;
+                        background-color: green;
+                        border: 1px solid black;   
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sec-proxlanzamientos{
+    @extend .sec-masvendidos;
+}
+
+.sec-footer{
+    background-color: #444;
+    width: 100%;
+    height: 22rem;
+
+    .container{
+        .metodospago{
+            display: flex;
+            border-bottom: 1px solid white;
+            align-items: center;
+
+            .pagos{
+                display: flex;
+
+                p{
+                    margin-top: 1rem;
+                    color: white;
+                }
+
+                img{
+                    width: 300px;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                }
+            }
+
+            .divisa{
+                margin-left: 42%;
+                font-weight: 600;
+
+                .btn-divisa{
+                    background-color: white;
+                    border-radius: 0.4rem;
+                    padding: 0.2rem;
+
+                    &:hover{
+                        box-shadow: 0 0 15px $color-principal;
+                    }
+                }
+
+                .modal-body{
+                    text-align: center;
+                    padding: 3rem;
+
+                    h6{
+                        text-align: start;
+                        margin-top: 2rem;
+                    }
+
+                    .regiones{
+                        width: 100%;
+                        height: 2rem;
+                        font-weight: 600;
+                    }
+
+                    .idiomas{
+                        @extend .regiones;
+                    }
+
+                    .divisas{
+                        @extend .regiones;
+                    }
+                }
+            }
+        }
+
+        .info{
+            display: flex;
+            height: 12rem;
+            gap: 3rem;
+            margin-top: 2rem;
+            border-bottom: 1px solid white;
+            
+
+            h6{
+                color: white;
+                font-weight: 600;
+            }
+
+            a{
+                text-decoration: none;
+                color: #fffa;
+                font-size: 0.8rem;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            .contacto{
+                display: flex;
+                gap: 0.4rem;
+                align-items: end;
+                margin-bottom: 2rem;
+                img{
+                    width: 30px;
+
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: 0.3s;
+                    }
+                }
+            }
+
+        }
+
+        .info-resp{
+            display: none;
+        }
+
+        .politica{
+            p{
+                font-size: 0.8rem;
+                color: #fffa;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+

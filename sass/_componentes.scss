@@ -1,0 +1,179 @@
+@use "global";
+
+@mixin bordes{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+@mixin botones-carousel{
+    background-color: #888a;
+    margin-top: 9rem;
+    width: 3rem;
+    height: 6rem;
+    &:hover{
+        box-shadow: 0 0 15px global.$color-principal;
+    }
+}
+
+@mixin botones-carousel-2{
+    background-color: #888a;
+    margin-top: 12rem;
+    width: 3rem;
+    height: 6rem;
+    &:hover{
+        box-shadow: 0 0 15px global.$color-principal;
+    }
+}
+
+.cuenta{
+    margin-right: 4rem;
+    i{
+        background-color: #888a;
+        font-size: 1.25rem;
+        padding: 0.4rem 0.65rem;
+        color: white;
+        border-radius: 50%;
+        box-shadow: 0 0 10px global.$color-principal;
+        margin-right: 1rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+
+        &:hover{
+            color: global.$color-principal;
+        }
+    }
+    
+}
+
+.carro{
+    i{
+        background-color: #888a;
+        font-size: 1.4rem;
+        padding: 0.6rem 0.9rem;
+        color: white;
+        border-radius: 50%;
+        box-shadow: 0 0 10px global.$color-principal;
+    }
+
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+}
+
+.categorias{
+    button{
+        @include bordes;
+        padding: 0.3rem 3rem 0.3rem 3rem;
+        background-color: rgba(111, 110, 110, 0.667);
+        
+        &:hover{
+            box-shadow: 0 0 15px global.$color-principal;
+        }
+        
+    }
+
+    .dropdown{
+        width: 15rem;
+        &:focus{
+            box-shadow: 0 0 15px global.$color-principal;
+        }
+    }
+}
+
+.sec-destacados{
+    .slide{
+        .anterior{
+            @include botones-carousel();
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+        }
+
+        .siguiente{
+            @include botones-carousel();
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+
+        .carousel{
+            .carrusel-1{
+                .contenido{
+                    .imagen{
+                        img{
+                            width: 45rem;
+                            margin-left: 3rem;
+                            border: 2px solid black
+                        }
+                    }
+                }
+            }
+
+            .carrusel-2{
+                @extend .carrusel-1;
+            }
+
+            .carrusel-3{
+                @extend .carrusel-1;
+            }
+
+            .carrusel-4{
+                @extend .carrusel-1;
+            }
+
+            .carrusel-5{
+                @extend .carrusel-1;
+            }
+            
+        }
+    }
+}
+
+.sec-ofertas{
+    .container{
+        .titulo{
+            .v-m{
+                &:hover{
+                    box-shadow: 0 0 15px global.$color-principal;
+                }
+            }
+        }
+        .slide{
+            .anterior{
+                @include botones-carousel-2;
+                border-top-left-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+                background-color: gray;
+            }
+
+            .siguiente{
+                @include botones-carousel-2;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                background-color: gray;
+            }
+        }
+    }
+}
+
+.sec-masvendidos{
+    .ver-mas{
+        color: global.$color-principal;
+        text-decoration: none;
+        margin-left: 45%;
+        font-size: 1.2rem;
+
+        &:hover{
+            text-decoration:underline;
+        }
+    }
+}
+
+.sec-proxlanzamientos{
+    @extend .sec-masvendidos;
+}
+
