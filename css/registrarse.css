@@ -16,6 +16,28 @@
 
 }
 
+.volver{
+    position: fixed;
+    left: 80px;
+    top: 20px;
+}
+
+.volver, i{
+    font-size: 35px;
+}
+
+.volver, a{
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.volver:hover{
+    box-shadow: 0 0 20px #07a8d5;
+    transform: scale(1.1);
+    transition: all 400ms;
+}
+
 .buttons{
     display: flex;
     gap: 20px;
