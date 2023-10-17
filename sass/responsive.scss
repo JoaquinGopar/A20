@@ -429,70 +429,45 @@
 }
 
 @media (max-width: 1200px){
-    .navbar{
-        .container-fluid{
-            .collapse{
-                border-top: 1px solid black;
-                .navbar-nav{
-                    .busqueda{
-                        margin-top: 0.5rem;
-                        margin-left: 0;
-                        margin-bottom: 2rem;
 
-                        .input-busqueda{
-                            input{
-                                width: 45rem;
-                                height: 3rem;
-                                font-size: 1.3rem;
+    .navbar-principal{
+        display: none;
+    }
+
+    .navbar-resp{
+        display: block;
+        background-color: #444444;
+        .navbar{
+            .container-fluid{
+                .offcanvas{
+                    h5{
+                        font-size: 1.2rem;
+                    }
+                    .offcanvas-body{
+                        .navbar-nav{
+                            li{
+                                a{
+                                    font-size: 1.2rem;
+                                    color: black;
+                                    
+                                }
                             }
                         }
-
-                        .lupa{
-                            .btn{
-                                height: 3rem;
-                            }
-                        }
-                    }
-                }
-
-                .formulario{
-                    margin-bottom: 1rem;
-
-                    .cuenta{
-                        i{
-                            font-size: 1.8rem;
-                            padding: 0.6rem 0.85rem;
-                        }
-
-                        a{
-                            font-size: 1.4rem;
-                        }
-                    }
-
-                    .carro{
-                        i{
-                            font-size: 1.7rem;
-                            padding: 0.7rem 0.9rem;
-                        }
-                    }
-                }
-
-                .contacto{
-                    display: flex;
-                    margin-top: 3rem;
-                    margin-bottom: 2rem;
-                    h4{
-                        margin-right: 2rem;
-                        color: white;
-                    }
-
-                    img{
-                        width: 30px;
-                        margin-left: 1rem;
                     }
                 }
             }
         }
+        .busqueda{
+            i{
+                background-color: global.$color-principal;
+                width: 30px;
+                text-align: center;
+            }
+        }
+    }
+
+    .navbar-sec{
+        display: none;
     }
 
     .sec-destacados{

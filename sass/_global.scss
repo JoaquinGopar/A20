@@ -1,4 +1,4 @@
-$color-principal: #07A8D5;
+$color-principal: #07a8d5;
 
 @mixin bordes-menu{
     border-left: 1px solid $color-principal;
@@ -19,68 +19,143 @@ $color-principal: #07A8D5;
 
 .cuerpo{
     background-color: #ebebeb;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar{
-    background-color: #444;
-    .container-fluid{
-        .logo{
-            width: 7rem;
-            margin-top: 0.5rem;
-        
-            &:hover{
-                transform: scale(1.1);
-                transition: 0.3s;
-            }
+#btn-mas{
+    display: none;
+}
+
+.contacto-2{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.redes, .btn-mas{
+    a, i{
+        display: block;
+        text-decoration: none;
+        background: #035a72;
+        color: #fff;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+        transition: all 500ms ease;
+    }
+}
+
+.redes{
+    a{
+        :hover{
+            background: #fff;
+            color: #035a72;
         }
+        margin-bottom: -15px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 
-        .collapse{
-            .navbar-nav{
-                .busqueda{
-                    display: flex;
-                    margin-left: 8rem;
-                    .input-busqueda{
-                        input{
-                            width: 28rem;
-                            height: 2.3rem;
-                            border-radius: 0.4rem;
-                            border-top-right-radius: 0;
-                            border-bottom-right-radius: 0;
-                            border: 2px solid #033442;
-                            outline: none;
+#btn-mas:checked~ .redes{
+    a{
+        margin-bottom: 10px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
 
-                            &:hover{
-                                box-shadow: 0 0 15px $color-principal;
-                            }
+.btn-mas{
+    .icon-mas{
+        cursor: pointer;
+        font-size: 23px;
+    }
+}
+
+#btn-mas:checked~ .btn-mas .icon-mas{
+    transform: rotate(137deg);
+    font-size: 25px;
+}
+
+.contact{
+    display: inline-block;
+    position: relative;
+    button{
+        position: relative;
+    }
+}
+
+.navbar-principal{
+    .navbar{
+        background-color: #444;
+        .container-fluid{
+            .logo{
+                width: 7rem;
+                margin-top: 0.5rem;
             
-                            &:focus{
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 0.3s;
+                }
+            }
+    
+            .collapse{
+                .navbar-nav{
+                    .busqueda{
+                        display: flex;
+                        margin-left: 8rem;
+                        .input-busqueda{
+                            input{
+                                width: 28rem;
+                                height: 2.3rem;
+                                border-radius: 0.4rem;
+                                border-top-right-radius: 0;
+                                border-bottom-right-radius: 0;
                                 border: 2px solid #033442;
-                                box-shadow: 0 0 15px $color-principal;
+                                outline: none;
+    
+                                &:hover{
+                                    box-shadow: 0 0 15px $color-principal;
+                                }
+                
+                                &:focus{
+                                    border: 2px solid #033442;
+                                    box-shadow: 0 0 15px $color-principal;
+                                }
                             }
                         }
-                    }
-
-                    .lupa{
-                        .btn{
-                            border-top-left-radius: 0;
-                            border-bottom-left-radius: 0;
-                            height: 2.3rem;
-                            border: 2px solid black;
-                            border-left: 0;
-                            background-color: $color-principal;
-                            
-                            i{
-                                color: white;
+    
+                        .lupa{
+                            .btn{
+                                border-top-left-radius: 0;
+                                border-bottom-left-radius: 0;
+                                height: 2.3rem;
+                                border: 2px solid black;
+                                border-left: 0;
+                                background-color: $color-principal;
+                                
+                                i{
+                                    color: white;
+                                }
                             }
                         }
                     }
                 }
-            }
-            .contacto{
-                display: none;
+                .contacto{
+                    display: none;
+                }
             }
         }
     }
+}
+
+.navbar-resp{
+    display: none;
 }
 
 .sec-nav{
@@ -90,7 +165,7 @@ $color-principal: #07A8D5;
         .categorias{
             margin-top: 2rem;
             justify-content: center;
-            gap: 6rem;
+            gap: 5rem;
             .menu-categ{
                 width: 15rem;
                 @include bordes-menu();
